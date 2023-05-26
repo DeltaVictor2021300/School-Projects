@@ -1,0 +1,15 @@
+C:\Users\emmet\source\repos\OOP bonus\bin\Debug\net6.0\OOP bonus.exe
+C:\Users\emmet\source\repos\OOP bonus\bin\Debug\net6.0\OOP bonus.deps.json
+C:\Users\emmet\source\repos\OOP bonus\bin\Debug\net6.0\OOP bonus.runtimeconfig.json
+C:\Users\emmet\source\repos\OOP bonus\bin\Debug\net6.0\OOP bonus.dll
+C:\Users\emmet\source\repos\OOP bonus\bin\Debug\net6.0\OOP bonus.pdb
+C:\Users\emmet\source\repos\OOP bonus\obj\Debug\net6.0\OOP bonus.csproj.AssemblyReference.cache
+C:\Users\emmet\source\repos\OOP bonus\obj\Debug\net6.0\OOP bonus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emmet\source\repos\OOP bonus\obj\Debug\net6.0\OOP bonus.AssemblyInfoInputs.cache
+C:\Users\emmet\source\repos\OOP bonus\obj\Debug\net6.0\OOP bonus.AssemblyInfo.cs
+C:\Users\emmet\source\repos\OOP bonus\obj\Debug\net6.0\OOP bonus.csproj.CoreCompileInputs.cache
+C:\Users\emmet\source\repos\OOP bonus\obj\Debug\net6.0\OOP bonus.dll
+C:\Users\emmet\source\repos\OOP bonus\obj\Debug\net6.0\refint\OOP bonus.dll
+C:\Users\emmet\source\repos\OOP bonus\obj\Debug\net6.0\OOP bonus.pdb
+C:\Users\emmet\source\repos\OOP bonus\obj\Debug\net6.0\OOP bonus.genruntimeconfig.cache
+C:\Users\emmet\source\repos\OOP bonus\obj\Debug\net6.0\ref\OOP bonus.dll
