@@ -1,0 +1,500 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: tahoma, arial, helvetica, sans-serif;
+	text-transform: capitalize;
+	text-decoration: none;
+	background-color: #00000000;
+}
+
+:root {
+	--bg-background: #333333;
+}
+
+/* Setup for Header */
+
+.header {
+    position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #333333;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	padding: 0px 7%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	padding: 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+header .navbar ul {
+	list-style: none;
+}
+
+header .navbar ul li {
+	position: relative;
+	float: left;
+}
+
+header .navbar ul li a {
+	font-size: 12px;
+	padding: 10px 25px;
+	color: #757575;
+	display: block;
+}
+
+header .navbar ul li a:hover {
+	background-color: var(--bg-background);
+	color: #ffffff;
+	border-radius: 5px;
+}
+
+header .navbar ul li a:active {
+	background-color: var(--bg-background);
+	color: #ffffff;
+	border-radius: 5px;
+}
+
+header .navbar ul li ul {
+	position: absolute;
+	left: 0;
+	width: 200px;
+	background: #333333;
+	border-radius: 0 0 10px 10px;
+	display: none;
+}
+
+header .navbar ul li ul li {
+	width: 100%;
+	border-top: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+header .navbar ul li ul li ul {
+	left: 200px;
+	top: 0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+	display: initial;
+}
+
+#menu-bar {
+	display: none;
+}
+
+header label {
+	color: #757575;
+	cursor: pointer;
+	display: none;
+}
+
+/* Responsive web/*  */
+@media (max-width: 768px) {
+	header {
+		padding: 20px;
+	}
+
+	header label {
+		display: initial;
+	}
+
+	header .navbar {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: #333333;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		display: none;
+	}
+
+	header .navbar ul li {
+		width: 100%;
+	}
+
+	header .navbar ul li ul {
+		position: relative;
+		width: 100%;
+	}
+
+	header .navbar ul li ul li {
+		background: #eeeeee;
+	}
+
+	header .navbar ul li ul li ul {
+		width: 100%;
+		left: 0;
+	}
+
+	#menu-bar:checked ~ .navbar {
+		display: initial;
+	}
+
+	.modal-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.hr {
+		display: none;
+	}
+
+	.h4 {
+		text-align: center;
+	}
+}
+
+/* Modal view css */
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 10px 10px;
+	border: 1px solid #888;
+	width: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 1s;
+	animation-name: animatetop;
+	animation-duration: 1s;
+	border-radius: 8px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+/* The Close Button */
+.close {
+	color: #939393;
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header {
+	padding: 2px 16px;
+	background-color: var(--bg-background);
+	color: white;
+}
+
+.modal-body {
+	padding: 20px;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.modal-footer {
+	padding: 2px 16px;
+	background-color: var(--bg-background);
+	color: white;
+}
+
+.hr {
+	height: 30vh;
+	width: 0.15vw;
+	border-width: 0;
+	color: #74cffa;
+	background-color: #ececec;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+section {
+	margin-top: 200px;
+}
+
+/* login and create your acount */
+.h4 {
+	margin-bottom: 20px;
+	color: var(--bg-background);
+}
+
+.create {
+	margin-bottom: 20px;
+	color: #424040;
+}
+
+.inputAccount {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	width: 90%;
+	border: none;
+	border-bottom: 1px solid #ccc;
+}
+
+.inputAccount:focus {
+	outline: none;
+}
+
+.button-item {
+	width: 180px;
+	border-radius: 5px;
+	background-color: var(--bg-background);
+	color: #fff;
+	margin-bottom: 5px;
+	font-size: 14px;
+	border: none;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+.button-item:hover {
+	box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}
+
+.divItem {
+	width: 40%;
+}
+
+.labelLogin {
+	color: #424040;
+	font-weight: bold;
+	margin-top: 12px;
+	margin-bottom: 8px;
+}
+
+.labelRegister {
+	color: #424040;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.forgot {
+	font-size: 11px;
+	color: var(--bg-background);
+}
+
+/* CSS registration */
+
+.containerReg {
+	margin-top: -80px;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.containerRegItem {
+	padding: 20px;
+	width: 80%;
+}
+
+.containerRegItem > h1 {
+	color: var(--bg-background);
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.containerRegItem > h4 {
+	color: #424040;
+	margin-bottom: 20px;
+}
+
+.h4Reg {
+	color: #424040;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.containerRegItem > p {
+	font-size: 12px;
+	color: #939393;
+	margin-bottom: 10px;
+}
+
+.checkLabel {
+	font-size: 12px;
+	color: #939393;
+}
+.containerRegItem > form-container > p {
+	font-size: 12px;
+	color: #939393;
+	margin-bottom: 10px;
+}
+
+.check {
+	float: left;
+	margin-right: 10px;
+}
+.containerRegItem > ul > li {
+	font-size: 12px;
+	color: #939393;
+	margin-bottom: 10px;
+}
+
+.containerRegItem > img {
+	width: 100%;
+	height: auto;
+	align-items: center;
+}
+
+.form-container {
+	background-color: white;
+	width: 400px;
+	border-radius: 5px;
+	padding: 20px 20px 0 20px;
+	box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}
+
+.buttonReg {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.button-item {
+	width: 40%;
+}
+
+/*carousel*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#heroCard{
+    margin-top: 90px;
+}
+
+/*footer*/
+
+footer{
+    background-color: #333333;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
