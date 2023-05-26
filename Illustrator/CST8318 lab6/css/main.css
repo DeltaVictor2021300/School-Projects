@@ -1,0 +1,11 @@
+svg{
+    width: 100px;
+    rotate: 270deg;
+    animation: rotation 3s;
+    animation-iteration-count: infinite
+}
+
+@keyframes rotation{
+    from {transform: rotate(359deg);}
+    to {transform: rotate(0deg);}
+}
