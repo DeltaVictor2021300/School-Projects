@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="scripts/main.js" defer></script>
+    <title>Car dealership</title>
+</head>
+<body>
+    <header>
+        <h1>Car Dealership</h1>
+    </header>
+    <main>
+        <p>
+            The 418 car dealership provides sports cars, street rods, muscle cars, 
+            exotics, exotic and exotic sports cars. The facility is located on 
+            two acres and is located in the Como Park neighborhood.
+        </p>
+
+        <form action="index.html" method="get" id="clientInfo" name="clientInfo">
+            <fieldset>
+                <legend>Client Info</legend>
+                <div id="container1">
+                    <div id="namebox">
+                        <label for="name">Your Name</label>
+                        <input type="textbox" id="name">
+                        <span id="nameError"></span>
+                    </div>
+
+                    <div id="agebox">
+                        <label for="age">Your Age</label>
+                        <input type="textbox" id="age">
+                        <span id="ageError"></span>
+                    </div>
+
+                    <div id="datebox">
+                        <label for="date">Date</label>
+                        <input type="date" id="date">
+                        <span id="dateError"></span>
+                    </div>
+
+                    <div id ="paymentbox">
+                        <label for="payment">Payment Method (Required)</label>
+                        <input list="payment" id="paymentMethod">
+                        <datalist id="payment">
+                            <option value="debit"></option>
+                            <option value="credit"></option>
+                            <option value="cash"></option>
+                        </datalist>
+                        <span id="paymentError"></span>
+                    </div>
+
+                </div>
+                <div id="container2">
+                    <div id="memberbox">
+                        <label for="isMember">Membership</label>
+                        <input type="checkbox" id="isMember">
+                    </div>
+
+                    <div id="sexContainer">
+                        <p>Sex (Required)</p>
+                        <div>
+                            <input type="radio" id="male" name="sex" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female" name="sex" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="other" name="sex" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                        <span id="sexError"></span>
+                    </div>
+                    <input type="submit" id="submit">
+                    <input type="reset" id="reset">
+                </div>
+                <label for="total">Total</label>
+                <input type="textbox" id="total" readonly>
+            </fieldset>
+        </form>
+
+        <div class="shoppingList">
+            <div class="grid-item">Item</div>
+            <div class="grid-item">Name</div>
+            <div class="grid-item">Value</div>  
+            <div class="grid-item">Subtotal</div>
+            <div class="grid-item">
+                <img id="image1" src="images/Placeholder_view_vector.svg.png">
+            </div>
+            <div id="name1" class="grid-item">6</div>  
+            <div id="value1" class="grid-item">7</div>
+            <div id="subtotal1" class="grid-item"></div>
+            <div class="grid-item">
+                <img id="image2" src="images/Placeholder_view_vector.svg.png">
+            </div>
+            <div id="name2" class="grid-item">10</div>
+            <div id="value2" class="grid-item">11</div>
+            <div id="subtotal2" class="grid-item"></div>
+            <div class="grid-item">
+                <img id="image3" src="images/Placeholder_view_vector.svg.png">
+            </div>
+            <div id="name3" class="grid-item">14</div>
+            <div id="value3" class="grid-item">15</div>
+            <div id="subtotal3" class="grid-item"></div>
+            <div class="grid-item">
+                <img id="image4" src="images/Placeholder_view_vector.svg.png">
+            </div>
+            <div id="name4" class="grid-item">18</div>
+            <div id="value4" class="grid-item">19</div>
+            <div id="subtotal4" class="grid-item"></div>  
+        </div>
+    </main>
+</body>
+</html>
