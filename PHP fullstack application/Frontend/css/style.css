@@ -1,0 +1,318 @@
+:root {
+	--color-primario: #20a0dc;
+	--tamanio-fuente: 15px;
+	--color-footer: #222222;
+}
+
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+	height: 80px;
+}
+
+.logoRedes {
+	height: 30px;
+	margin: 0px 5px;
+}
+
+.navbar {
+	background-color: white !important;
+}
+
+header .navbar ul li a {
+	font-size: var(--tamanio-fuente);
+	color: #757575;
+}
+
+header .navbar ul li a:hover {
+	background-color: var(--color-primario);
+	color: #ffffff;
+	border-radius: 6px;
+}
+
+.carousel {
+	box-shadow: 2px 2px 10px black;
+}
+
+.navbarClass {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.button:hover {
+	background-color: #177ba9;
+	box-shadow: 2px 2px 10px grey;
+	border-radius: 6px;
+	padding: 5px 25px;
+	border: solid 1px white;
+}
+
+.textBanner {
+	color: #ffffff;
+}
+
+button {
+	background-color: var(--color-primario);
+	color: #ffffff;
+	border-radius: 6px;
+	padding: 5px 25px;
+	border: solid 1px white;
+}
+
+.inputnone {
+	outline: none;
+}
+
+iframe {
+	border-radius: 10px;
+}
+
+/* section1 */
+
+.section1 {
+	margin-top: -520px;
+}
+
+.conatinerSection1a {
+	border: solid 1px white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 15px #c2c2c2;
+	padding: 30px;
+}
+.conatinerSection1a2 {
+	border: solid 1px white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 15px #c2c2c2;
+}
+
+.conatinerSection1b {
+	border: solid 1px white;
+	background-color: var(--color-primario);
+	color: white;
+	border-radius: 10px;
+	padding: 40px;
+}
+
+/* section2 */
+.container22 {
+	margin-top: 35px;
+	padding: 30px;
+	background-color: var(--color-primario);
+	box-shadow: 5px 5px 25px #c2c2c2;
+	color: white;
+}
+
+.OttawaDentistImg {
+	height: 250px;
+}
+
+.OttawaDentistImg2 {
+	height: 650px;
+}
+
+.textBlue {
+	color: white;
+}
+
+/* section 03 */
+.container33 {
+	margin-top: 35px;
+}
+
+.emergency {
+	height: 350px;
+}
+
+.textTitle3 {
+	font-weight: bold;
+	color: var(--color-primario);
+}
+
+/* Footer styles */
+
+.footerup {
+	height: 10px;
+	background-color: grey;
+}
+.footerdown {
+	background-color: black;
+	height: 65px;
+	padding: 5px;
+}
+
+.footer {
+	background-color: var(--color-footer);
+	padding: 20px 20px;
+}
+
+.footerColor {
+	color: #c2c2c2;
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+}
+
+.footerColor2 {
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+}
+
+/* ************************* CSS EFFECT SCROLL *****************************  */
+
+.fadeTop {
+	opacity: 0;
+	transform: translate(0, 10vh);
+	transition: all 1s;
+}
+
+.fadeBanner {
+	opacity: 0;
+	transform: translate(0, 20vh);
+	transition: all 2s;
+}
+
+.fadeRight {
+	opacity: 0;
+	transform: translate(10vh, 0vh);
+	transition: all 1s;
+}
+
+.fadeLeft {
+	opacity: 0;
+	transform: translate(-10vh, 0vh);
+	transition: all 1s;
+}
+
+.visible {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+/* *********************************************************************  */
+
+/* vertial and horizontal line */
+.hr1 {
+	height: 25vh;
+	width: 0.3vw;
+	border-width: 0;
+	background-color: var(--color-primario);
+	color: var(--color-primario);
+	margin-left: 15px;
+	border-radius: 10px;
+}
+
+.hr2 {
+	height: 0.5vh;
+	width: 30vw;
+	border-width: 0;
+	background-color: white;
+	color: white;
+	border-radius: 10px;
+	background-clip: padding-box;
+}
+
+.textTitleWhite {
+	font-weight: bold;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: white;
+}
+
+.textTitlePrimary {
+	font-weight: bold;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: var(--color-primario);
+}
+
+.textGrey {
+	color: grey;
+	margin: 0px 30px;
+}
+
+/* bannerBox on .carousel */
+.Bannerbox {
+	position: relative;
+	z-index: 1;
+	top: -700px;
+	background-color: grey;
+	border-radius: 10px;
+	padding: 25px;
+	margin-left: 100px;
+	color: white;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	height: 280px;
+	width: 300px;
+}
+
+/* bannerLogo on carousel */
+.BannerLogo {
+	position: relative;
+	z-index: 1;
+	top: -530px;
+	padding: 25px;
+	margin-left: 880px;
+}
+
+.parraf {
+	margin: 0px 20px;
+}
+
+.menuItem:hover {
+	color: white;
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+	.Bannerbox {
+		display: none;
+	}
+
+	.BannerLogo {
+		display: none;
+	}
+
+	.section1 {
+		margin-top: 30px;
+	}
+}
+
+.buttonLogin {
+	background-color: var(--color-primario);
+	color: white;
+}
+
+.buttonLogin2 {
+	background-color: var(--color-primario);
+	color: white;
+}
+
+.buttonLogin:hover {
+	background-color: grey;
+	color: white;
+}
+
+/* Custom styles for the modal */
+.custom-modal {
+	width: 400px;
+	border-radius: 10px;
+}
+
+.LoginTitle {
+	color: var(--color-primario);
+}
+
+.BannerTitleLetter {
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 20px;
+}
+
+.topup {
+	height: 10px;
+	color: red;
+	background-color: var(--color-primario);
+}
