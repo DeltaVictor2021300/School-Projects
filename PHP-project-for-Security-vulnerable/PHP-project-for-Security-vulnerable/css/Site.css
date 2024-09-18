@@ -1,0 +1,57 @@
+/* Add padding to the main picture */
+.main-picture {
+  padding: 10px;
+  object-fit: contain;
+   overflow: auto;   
+}
+
+.main-picture img#mainPicture {
+    width: 920.4px;
+    height: 553px;
+    object-fit: cover; /* or object-fit: contain; depending on your preference */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+div.scroll-container {
+  display: block;  /* Default block-level behavior */
+  overflow-x: auto;  /* Enable horizontal scrolling */
+  white-space: nowrap;
+  background-color: #BFD5F0;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  display: inline-block;
+  width:100px;
+  height:100px;
+  margin-bottom: 0;
+}
+ .thumbnail.selected {
+        border: 5px solid blue; /* Apply the blue border to selected thumbnails */
+    }
+
